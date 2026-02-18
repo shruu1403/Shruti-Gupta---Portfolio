@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import './Projects.css';
+import splitmateImg from '../assets/splitmate.png';
+import chwiggyImg from '../assets/chwiggy.png';
+import myWalletImg from '../assets/my-wallet.png';
 
 const projects = [
     {
@@ -11,7 +14,7 @@ const projects = [
         techStack: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
         liveDemo: 'https://www.splitmate.me',
         github: 'https://github.com/shruu1403/splitmate',
-        image:"src/assets/splitmate.png"
+        image: splitmateImg
     },
     {
         id: 2,
@@ -22,7 +25,7 @@ const projects = [
         techStack: ['React.js', 'Node.js', 'REST APIs', 'Google OAuth'],
         liveDemo: 'https://chwiggy.netlify.app/',
         github: 'https://github.com/shruu1403/chwiggy',
-        image: 'src/assets/chwiggy.png',
+        image: chwiggyImg,
     },
     {
         id: 3,
@@ -32,7 +35,7 @@ const projects = [
             'A responsive finance tracking interface using React.js and Material UI featuring dashboards, charts, filters, and reusable UI components. Built interactive analytics and real-time financial visualizations using MUI Charts, integrated securely with backend APIs.',
         techStack: ['React.js', 'Material UI', 'MUI Charts', 'REST APIs'],
         liveDemo: 'https://my-wallet-frontend-liard.vercel.app/',
-        image: 'src/assets/my-wallet.png',
+        image: myWalletImg,
     },
 ];
 

@@ -291,8 +291,18 @@
 
 /* --------- Responsive --------- */
 @media (max-width: 768px) {
+    .projects__scroll-wrapper {
+        padding: 0 16px 20px;
+    }
+
+    .projects__track {
+        width: 100%;
+        gap: 36px;
+    }
+
     .projects__card {
-        flex: 0 0 320px;
+        flex: 0 0 auto;
+        width: 100%;
     }
 
     .projects__card-image {

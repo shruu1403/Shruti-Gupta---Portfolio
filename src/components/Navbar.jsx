@@ -41,9 +41,7 @@ export default function Navbar() {
         document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
     };
 
-    const handleResume = () => {
-        window.open('/resume.pdf', '_blank');
-    };
+
 
     return (
         <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
@@ -64,9 +62,29 @@ export default function Navbar() {
                             {link.label}
                         </button>
                     ))}
-                    <button className="navbar__resume-btn" onClick={handleResume}>
-                        Resume
-                    </button>
+                    <div className="navbar__resume-group">
+                        <a
+                            href={`${import.meta.env.BASE_URL}Shruti-Gupta-Resume.pdf`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="navbar__resume-btn"
+                        >
+                            Resume
+                        </a>
+                        <a
+                            href={`${import.meta.env.BASE_URL}Shruti-Gupta-Resume.pdf`}
+                            download
+                            className="navbar__download-btn"
+                            aria-label="Download Resume"
+                            title="Download Resume"
+                        >
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
                 <button

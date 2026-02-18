@@ -106,21 +106,49 @@
 }
 
 /* Resume Button */
+.navbar__resume-group {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    border: 1.5px solid var(--accent-primary);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
 .navbar__resume-btn {
     font-family: var(--font-mono);
     font-size: 0.88rem;
     color: var(--accent-primary);
-    padding: 8px 22px;
-    border: 1.5px solid var(--accent-primary);
-    border-radius: var(--radius-sm);
+    padding: 8px 18px;
     transition: all var(--transition-base);
     letter-spacing: 0.3px;
-    margin-left: 8px;
+    text-decoration: none;
+    border: none;
 }
 
 .navbar__resume-btn:hover {
     background: var(--accent-primary);
     color: var(--bg-primary);
+}
+
+.navbar__download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    color: var(--accent-primary);
+    border-left: 1.5px solid var(--accent-primary);
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.navbar__download-btn:hover {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+}
+
+.navbar__resume-group:hover {
     box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
 }
 
@@ -169,9 +197,9 @@
         height: 100vh;
         background: var(--bg-secondary);
         flex-direction: column;
-        align-items: flex-start;
-        padding: 100px 40px 40px;
-        gap: 8px;
+        align-items: center;
+        padding: 100px 24px 40px;
+        gap: 12px;
         transition: right var(--transition-smooth);
         border-left: 1px solid var(--border-subtle);
         box-shadow: var(--shadow-lg);
@@ -185,22 +213,28 @@
         font-size: 1.05rem;
         padding: 12px 0;
         width: 100%;
+        text-align: center;
     }
 
     .navbar__link::after {
         bottom: 8px;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .navbar__link:hover::after,
     .navbar__link--active::after {
-        left: 0;
+        left: 50%;
         width: 30px;
     }
 
-    .navbar__resume-btn {
+    .navbar__resume-group {
         margin-left: 0;
         margin-top: 16px;
+        justify-content: center;
+    }
+
+    .navbar__resume-btn {
         text-align: center;
     }
 }
