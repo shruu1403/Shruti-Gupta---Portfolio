@@ -1,0 +1,120 @@
+/* ============ CONTACT SECTION ============ */
+.contact {
+    position: relative;
+    background: var(--bg-secondary);
+}
+
+.contact__header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.contact__header .section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Card */
+.contact__card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.contact__card:hover {
+    border-color: var(--border-accent);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+    background: var(--bg-card-hover);
+}
+
+.contact__card-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+    background: rgba(168, 85, 247, 0.1);
+    color: var(--accent-primary);
+    flex-shrink: 0;
+    transition: all var(--transition-base);
+}
+
+.contact__card:hover .contact__card-icon {
+    background: rgba(168, 85, 247, 0.2);
+    transform: scale(1.05);
+}
+
+.contact__card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 0;
+}
+
+.contact__card-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.contact__card-value {
+    font-size: 0.92rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contact__card-arrow {
+    color: var(--text-muted);
+    flex-shrink: 0;
+    transition: all var(--transition-base);
+    opacity: 0;
+    transform: translate(-4px, 4px);
+}
+
+.contact__card:hover .contact__card-arrow {
+    opacity: 1;
+    color: var(--accent-primary);
+    transform: translate(0, 0);
+}
+
+/* --------- Responsive --------- */
+@media (max-width: 700px) {
+    .contact__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact__card {
+        padding: 20px 18px;
+        gap: 16px;
+    }
+
+    .contact__card-icon {
+        width: 44px;
+        height: 44px;
+    }
+}

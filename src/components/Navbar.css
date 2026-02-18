@@ -1,0 +1,206 @@
+/* ============ NAVBAR ============ */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 18px 0;
+    transition: all var(--transition-base);
+}
+
+.navbar--scrolled {
+    background: rgba(13, 10, 26, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 12px 0;
+    box-shadow: var(--shadow-md);
+}
+
+.navbar__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--container-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navbar__logo {
+    font-family: var(--font-mono);
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    transition: transform var(--transition-base);
+    cursor: pointer;
+}
+
+.navbar__logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar__logo-bracket {
+    color: var(--text-muted);
+    transition: color var(--transition-base);
+}
+
+.navbar__logo:hover .navbar__logo-bracket {
+    color: var(--accent-primary);
+}
+
+.navbar__logo-text {
+    color: var(--text-primary);
+    margin: 0 2px;
+}
+
+/* Links */
+.navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar__link {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    position: relative;
+    transition: color var(--transition-base), background var(--transition-base);
+    letter-spacing: 0.3px;
+}
+
+.navbar__link::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent-primary);
+    transition: width var(--transition-base), left var(--transition-base);
+    border-radius: 2px;
+}
+
+.navbar__link:hover {
+    color: var(--text-primary);
+}
+
+.navbar__link:hover::after {
+    width: 60%;
+    left: 20%;
+}
+
+.navbar__link--active {
+    color: var(--text-primary);
+}
+
+.navbar__link--active::after {
+    width: 60%;
+    left: 20%;
+}
+
+/* Resume Button */
+.navbar__resume-btn {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    color: var(--accent-primary);
+    padding: 8px 22px;
+    border: 1.5px solid var(--accent-primary);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-base);
+    letter-spacing: 0.3px;
+    margin-left: 8px;
+}
+
+.navbar__resume-btn:hover {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+/* Hamburger */
+.navbar__hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.navbar__hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: 2px;
+    transition: all var(--transition-base);
+}
+
+.navbar__hamburger--open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar__hamburger--open span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar__hamburger--open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* --------- Mobile --------- */
+@media (max-width: 768px) {
+    .navbar__hamburger {
+        display: flex;
+    }
+
+    .navbar__links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 320px;
+        height: 100vh;
+        background: var(--bg-secondary);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 40px 40px;
+        gap: 8px;
+        transition: right var(--transition-smooth);
+        border-left: 1px solid var(--border-subtle);
+        box-shadow: var(--shadow-lg);
+    }
+
+    .navbar__links--open {
+        right: 0;
+    }
+
+    .navbar__link {
+        font-size: 1.05rem;
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    .navbar__link::after {
+        bottom: 8px;
+        left: 0;
+    }
+
+    .navbar__link:hover::after,
+    .navbar__link--active::after {
+        left: 0;
+        width: 30px;
+    }
+
+    .navbar__resume-btn {
+        margin-left: 0;
+        margin-top: 16px;
+        text-align: center;
+    }
+}

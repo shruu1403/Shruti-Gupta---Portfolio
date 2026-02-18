@@ -1,0 +1,129 @@
+/* ============ ABOUT SECTION ============ */
+.about {
+    position: relative;
+}
+
+.about__header {
+    margin-bottom: 60px;
+}
+
+.about__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Text */
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__description {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.85;
+}
+
+.about__highlight {
+    color: var(--accent-tertiary);
+    font-weight: 600;
+}
+
+/* Details */
+.about__details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 28px;
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+}
+
+.about__detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about__detail-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.about__detail-value {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Stats */
+.about__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.about__stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    transition: all var(--transition-base);
+}
+
+.about__stat-card:hover {
+    border-color: var(--border-accent);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-glow);
+    background: var(--bg-card-hover);
+}
+
+.about__stat-number {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-tertiary), var(--accent-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about__stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+/* --------- Responsive --------- */
+@media (max-width: 900px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about__stats {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about__details {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 20px;
+    }
+}
