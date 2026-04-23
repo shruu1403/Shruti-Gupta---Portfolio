@@ -1,16 +1,37 @@
-# React + Vite
+# 🚀 Shruti Gupta | Full Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This project showcases my journey as a Full Stack Developer, highlighting my experience with AI-powered applications, modern frontend frameworks, and production-ready backend systems.
 
-Currently, two official plugins are available:
+**Live Demo:** [shruu1403.github.io/Shruti-Gupta---Portfolio](https://shruu1403.github.io/Shruti-Gupta---Portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js, Next.js, TypeScript, Tailwind CSS, Framer Motion
+- **Backend:** Node.js, Express.js, Socket.io, JWT Authentication
+- **Database & BaaS:** Supabase (Auth, Realtime, RLS), MongoDB, PostgreSQL
+- **AI & Automation:** Google Gemini AI, Prompt Engineering, Web Scraping (Puppeteer)
+- **DevOps:** AWS EC2, Vercel, Nginx, PM2
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🌟 Featured Projects
+
+### 1. **Jobpilot** | [Live Demo](https://jobpilot-zeta-rust.vercel.app)
+*AI-Powered Job Search SaaS*
+- Built with **Next.js** and **Google Gemini** to automate resume analysis and job tracking.
+- Features a Kanban-style application tracker and AI-driven LinkedIn referral generator.
+
+### 2. **Splitmate** | [Live Demo](https://splitmate.me)
+*Group Expense Management Platform*
+- Real-time expense splitting using **Socket.io** and **MongoDB**.
+- Deployed on **AWS EC2** with Nginx reverse proxy and SSL.
+
+### 3. **Chwiggy** | [Live Demo](https://chwiggy.netlify.app)
+*Food Delivery Web Application*
+- Swiggy-inspired interface with dynamic routing and optimized product discovery.
+- Integrated Google OAuth and deployed via Netlify/Render.
+
+---
+
