@@ -12,15 +12,10 @@ export default function About() {
                 <div className="about__grid">
                     <div className="about__text reveal-left">
                         <p className="about__description">
-                            I&apos;m a <span className="about__highlight">Full Stack Developer (MERN + Supabase)
-                            </span> with
-                            hands-on experience building and deploying scalable web applications using React.js,
-                            Node.js, MongoDB, and Supabase. I&apos;ve built & deployed <span className="about__highlight">3+
-                                full-stack applications</span> with responsive UI, real-time features, authentication
-                            systems, and modern API integrations.
+                            <span className="about__highlight">Full Stack Developer</span> with hands-on experience building scalable, <span className="about__highlight">AI-powered</span> web applications using Next.js, React.js, TypeScript, and Supabase. Skilled in developing production-ready features such as authentication, real-time systems, and API integrations using Node.js and MongoDB.
                         </p>
                         <p className="about__description">
-                            My strong focus on backend architecture, scalable API design, and performance optimization drives me to build applications that are robust, efficient, and reliable. Alongside technical development, I value clear communication, teamwork, and collaborative problem-solving to deliver impactful solutions.
+                            Worked with AI tools like <span className="about__highlight">Google Gemini</span> to build automation and insight-driven features. Proficient in creating responsive user interfaces with Tailwind CSS and managing state efficiently, with deployment experience on Vercel and AWS EC2. Strong interest in building solutions that improve user productivity and solve real-world problems.
                         </p>
 
                         <div className="about__details">

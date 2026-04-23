@@ -1,41 +1,42 @@
 import { useState } from 'react';
 import './Projects.css';
+import jobpilotImg from '../assets/jobpilot.png';
 import splitmateImg from '../assets/splitmate.png';
 import chwiggyImg from '../assets/chwiggy.png';
-import myWalletImg from '../assets/my-wallet.png';
 
 const projects = [
     {
         id: 1,
-        title: 'Splitmate',
-        subtitle: 'Group Expense Management Web App',
+        title: 'Jobpilot',
+        subtitle: 'AI-Powered Job Search SaaS',
         description:
-            'A full-stack expense management platform built with React.js, Node.js, Express, and MongoDB featuring real-time updates via Socket.io. Includes complex balance calculations, multi-participant expense-splitting logic, JWT & Google OAuth authentication, and secure email-based invite flows. Deployed on Vercel (frontend) and Render (backend).',
-        techStack: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
-        liveDemo: 'https://www.splitmate.me',
+            'Built an AI-powered SaaS platform using Next.js and Google Gemini that helps users streamline job search by automating resume analysis, job tracking, and referral generation. Features a Resume Analyzer for resume-job fit, a Kanban-style job tracker with drag-and-drop, and an AI Referral Generator for personalized outreach. Implemented robust server-side rate limiting and persistence.',
+        techStack: ['Next.js', 'Supabase', 'Gemini AI', 'TypeScript', 'Tailwind CSS'],
+        liveDemo: 'https://jobpilot-zeta-rust.vercel.app',
+        github: 'https://github.com/shruu1403/jobpilot',
+        image: jobpilotImg
+    },
+    {
+        id: 2,
+        title: 'Splitmate',
+        subtitle: 'Group Expense Management Platform',
+        description:
+            'A full-stack group expense management platform built with React.js, Node.js, Express, and MongoDB featuring real-time updates via Socket.io. Includes complex balance calculations, multi-participant expense-splitting logic, JWT & Google OAuth authentication, and production-ready deployment on AWS EC2 with Nginx reverse proxy and SSL.',
+        techStack: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'JWT', 'AWS EC2'],
+        liveDemo: 'https://splitmate.me',
         github: 'https://github.com/shruu1403/splitmate',
         image: splitmateImg
     },
     {
-        id: 2,
+        id: 3,
         title: 'Chwiggy',
         subtitle: 'Food Delivery Web Application',
         description:
-            'A Swiggy-inspired responsive food ordering interface using React.js with dynamic routing and modern UI. Features search, filtering, category navigation, cart, checkout flow, and discount handling with seamless backend API integration. Integrated Google OAuth authentication and deployed using Netlify + Render.',
-        techStack: ['React.js', 'Node.js', 'REST APIs', 'Google OAuth'],
-        liveDemo: 'https://chwiggy.netlify.app/',
+            'Developed a Swiggy-inspired responsive food ordering interface using React.js with dynamic routing and modern UI. Features responsive design, optimized product discovery through search/filtering, cart, checkout flow, and discount handling. Integrated Google OAuth and deployed using Netlify and Render.',
+        techStack: ['React.js', 'Node.js', 'Google OAuth', 'Netlify', 'Render'],
+        liveDemo: 'https://chwiggy.netlify.app',
         github: 'https://github.com/shruu1403/chwiggy',
         image: chwiggyImg,
-    },
-    {
-        id: 3,
-        title: 'My Wallet',
-        subtitle: 'Personal Finance Tracking App',
-        description:
-            'A responsive finance tracking interface using React.js and Material UI featuring dashboards, charts, filters, and reusable UI components. Built interactive analytics and real-time financial visualizations using MUI Charts, integrated securely with backend APIs.',
-        techStack: ['React.js', 'Material UI', 'MUI Charts', 'REST APIs'],
-        liveDemo: 'https://my-wallet-frontend-liard.vercel.app/',
-        image: myWalletImg,
     },
 ];
 

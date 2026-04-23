@@ -44,14 +44,14 @@ export default function Hero() {
                     </p>
 
                     <p className="hero__description">
-                        Building scalable web applications with modern technologies.
+                        Building scalable, <span className="hero__highlight">AI-powered</span> web applications with modern technologies.
                         <br />
                         Passionate about clean code, responsive design, and seamless user experiences.
                     </p>
 
                     <div className="hero__actions">
                         <a
-                            href={`${import.meta.env.BASE_URL}Shruti-Gupta-Resume.pdf`}
+                            href={`${import.meta.env.BASE_URL}Shruti_Resume.pdf`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hero__btn hero__btn--primary"

@@ -64,7 +64,7 @@ export default function Navbar() {
                     ))}
                     <div className="navbar__resume-group">
                         <a
-                            href={`${import.meta.env.BASE_URL}Shruti-Gupta-Resume.pdf`}
+                            href={`${import.meta.env.BASE_URL}Shruti_Resume.pdf`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="navbar__resume-btn"
@@ -72,7 +72,7 @@ export default function Navbar() {
                             Resume
                         </a>
                         <a
-                            href={`${import.meta.env.BASE_URL}Shruti-Gupta-Resume.pdf`}
+                            href={`${import.meta.env.BASE_URL}Shruti_Resume.pdf`}
                             download
                             className="navbar__download-btn"
                             aria-label="Download Resume"
